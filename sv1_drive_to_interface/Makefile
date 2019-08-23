@@ -31,9 +31,13 @@ sim:
 urg:
 	urg -dir simv.vdb -report both
 
+dve:
+	dve -vpd *.vpd&
+
 .PHONY:clean
 clean:
 	rm -rf csrc simv ucli.key simv.daidir
 	rm -rf simv.vdb vc_hdrs.h
 	rm -rf *.log
 	rm -rf *.vpd
+	rm -rf DVE*

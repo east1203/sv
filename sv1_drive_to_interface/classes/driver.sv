@@ -20,6 +20,7 @@ virtual task build();
 endtask
 
 virtual task run();
+  bfm.reset();
   while(1) begin
     gen2drv.get(driver_tr);
     foreach(cb_queue[i]) cb_queue[i].pre_cb(driver_tr);

@@ -21,6 +21,7 @@ top_module
     >drv
       >cb_queue[$]
     >gen
+  > user_cb
 
 ******* description *******
 (new) Drive transaction to interface on posedge clk.
